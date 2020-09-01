@@ -1,0 +1,196 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+header{
+  top:0;
+  left:0;
+    position: fixed;
+}
+
+.icon{
+    display: inline-block;
+    color: rgb(255, 72, 72);
+    margin:3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.icon:hover{
+    color: rgb(202, 92, 245);
+}
+
+.background{
+    margin-top: 5px;
+    border-radius: 20px;
+    display: block;
+    position: static;
+}
+
+/*For about page*/
+.myimage{
+    display: inline-block;
+    float: left;
+    width: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0.5%;
+    border: solid 2px rgb(202, 92, 245);
+    border-radius: 20px;
+    opacity: 0.8;
+    transition-property: border-radius border-color;
+    transition-delay: 0.5s;
+    transition-duration: 0.4s;
+}
+
+.myimage:hover{
+    border:solid 2px rgb(255, 94, 94);
+    border-radius: 0;
+    opacity: 1;
+}
+
+.intro{
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 2%;
+    padding: 0.5%;
+    font-size: x-large;
+    width: 60%;
+    color: white;
+}
+
+.iconabout{
+    display: inline-block;
+    color: rgb(202, 92, 245);
+    margin: 2%;
+    margin-left: 0;
+}
+
+.iconabout:hover{
+    color: tomato;
+}
+/* For about page*/
+
+.planet{
+    border: solid 2px rgb(202, 92, 245);
+    padding: 2px;
+    border-radius: 20px;
+    float: left;
+    margin-left:3%;
+    margin-right: 3%;
+    margin-top:2%;
+    margin-bottom: 0;
+    transition-property: border-radius border;
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+}
+
+.planet:hover{
+    border-radius: 0;
+    border: solid 2px rgb(255, 72, 72);
+
+}
+
+h1{
+    color: rgb(202, 92, 245);
+}
+
+.quotes{
+    border: solid 2px rgb(202, 92, 245);
+    padding: 3%;
+    margin:3%;
+    margin-top: 0;
+    position: center;
+    color: white;
+    font-size: 50px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(202, 92, 245);
+    width: 100vw;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: x-large;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-property: background-color color;
+    transition-delay: 0.2s;
+    transition-duration: 1s;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: x-large;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    transition-property: background-color color;
+    transition-delay: 0.2s;
+    transition-duration: 1s;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: tomato;
+    color:white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(252, 172, 172);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+table{
+  color: #f9f9f9;
+}
+
+th{
+  font-size: x-large;
+  text-align: left;
+}
+
+.catogory{
+  margin-left: 3%;
+}
+
+.catogory a{
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.catogory a:hover{
+  color: tomato;
+}
