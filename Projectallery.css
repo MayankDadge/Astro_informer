@@ -200,3 +200,31 @@ th{
 .catogory a:hover{
   color: tomato;
 }
+
+@media screen and (max-width: 480px){
+  .planet{
+    display: inline-block;
+    margin:4%;
+    margin-left: 18%;
+    padding:1%;
+    width: 75%;
+  }
+  .icon{
+    display: block;
+    margin-top:0;
+    margin-bottom: 10%;
+    }
+  .icons{
+    position: fixed;
+  }
+  .quotes{
+    display: none;
+  }
+  .navbar a{
+    font-size: x-large;
+  }
+  .dropdown .dropbtn{
+    font-size: x-large;
+  }
+
+}
