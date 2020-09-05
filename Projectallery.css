@@ -221,5 +221,9 @@ th{
   .dropdown .dropbtn{
     font-size: x-large;
   }
+    
+  navbar a{
+      font-size: large;
+    }
 
 }
