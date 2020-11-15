@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(237, 248, 220);
+}
+
+#addBtn{
+    transition-property: color, background-color;
+    transition-duration: 0.5s;
+}
+
+#addBtn:hover{
+    color:black;
+    background-color: rgb(95, 250, 90);
+}
