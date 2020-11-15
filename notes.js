@@ -1,6 +1,10 @@
 console.log('Welcome to the note app');
 showNotes();
-
+let datebtn = document.getElementById("dateBtn");
+datebtn.addEventListener("click", function () {
+    var d = new Date();
+    document.getElementById("addTxt").innerHTML = d;
+})
 let addbtn = document.getElementById("addBtn");
 addbtn.addEventListener("click", function(e){
     let addTxt = document.getElementById("addTxt");
