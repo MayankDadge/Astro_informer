@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(237, 248, 220);
+    background-color: rgb(218, 228, 248);
 }
 
 #addBtn{
@@ -11,3 +11,10 @@ body{
     color:black;
     background-color: rgb(95, 250, 90);
 }
+
+#dateinback{
+    position: absolute;
+    margin-top:10px;
+    margin-left: 20px;
+}
+
