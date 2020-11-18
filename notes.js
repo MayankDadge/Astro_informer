@@ -51,6 +51,7 @@ function showNotes() {
     }
     else {
         notesElm.innerHTML = `Nothing to show! Use the add button section to add your notes`
+        notesElm.style.color="rgb(86, 157, 250)";
     }
 }
 
@@ -83,3 +84,19 @@ search.addEventListener("input", function () {
         }
     })
 })
+
+function colorflip(){
+    document.getElementById("addanote").style.color=getRandomColor();
+    document.getElementById("dateinback").style.color=getRandomColor();
+
+}
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+  
