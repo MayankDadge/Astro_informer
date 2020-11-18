@@ -13,7 +13,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">TakeNotes - By Mayank Dadge</a>
+        <a class="navbar-brand" href="notes.htm">TakeNotes - By Mayank</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,10 +21,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="notes.html">HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
+              <a class="nav-link" href="about.html">ABOUT</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -33,17 +33,20 @@
           </form>
         </div>
     </nav>
+    <div class="head container">
     <h1 id="dateinback"></h1>
+    <H1 id="dateinback"><br>A NOTE TAKING WEB APPLICATION</H1>
     <img class="background"src="daytime.jpg" alt="Daytime illustration" width="100%">
+    </div>
   </header>
 
     <div class="container my-3">
         <div class="card">
             <div class="card-body">
-              <h3 class="card-title">ADD A NOTE <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              <h3 id="addanote"class="card-title">ADD A NOTE <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
               </h3>
               <div class="form-group">
-                <textarea class="form-control" id="addTxt" rows="4"></textarea>
+                <textarea onkeypress="colorflip()" class="form-control" id="addTxt" rows="4"></textarea>
               </div>
               <button class="btn btn-primary" id="addBtn"><i class="fa fa-plus"></i> ADD</button>
             </div>
