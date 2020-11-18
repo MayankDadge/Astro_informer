@@ -13,7 +13,7 @@ body{
 }
 
 h1{
-    color: rgb(105, 169, 252);
+    color: rgb(86, 157, 250);
 }
 
 #dateinback{
@@ -25,10 +25,19 @@ h1{
 
 }
 
-@media screen and (max-width: 480px){
-    .background{
-        width: 100%;
-        height: 100px;
+#projdetail{
+    display: inline-block;
+    width: 70%;
+}
+
+#myinfo{
+    display: inline-block;
+}
+
+@media screen and (max-width: 800px){
+    #dateinback{
+        display: none;
     }
+
 }
 
