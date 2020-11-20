@@ -16,6 +16,23 @@ h1{
     color: rgb(86, 157, 250);
 }
 
+h2{
+    color: rgb(86, 157, 250);
+
+
+}
+
+#yournote{
+    display: inline-block;
+}
+
+#newnote{
+    display: inline-block;
+    color: black;
+    background-color: greenyellow;
+
+}
+
 #dateinback{
     position: absolute;
     margin-top:20px;
@@ -28,10 +45,6 @@ h1{
 #projdetail{
     display: inline-block;
     width: 70%;
-}
-
-#myinfo{
-    display: inline-block;
 }
 
 @media screen and (max-width: 800px){
