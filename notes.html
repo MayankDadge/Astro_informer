@@ -13,7 +13,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="notes.htm">TakeNotes - By Mayank</a>
+        <a class="navbar-brand" href="#">TakeNotes - By Mayank</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="notes.html">HOME <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">ABOUT</a>
@@ -29,7 +29,6 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
     </nav>
@@ -41,7 +40,7 @@
   </header>
 
     <div class="container my-3">
-        <div class="card">
+        <div id="writehere" class="card">
             <div class="card-body">
               <h3 id="addanote"class="card-title">ADD A NOTE <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
               </h3>
@@ -49,10 +48,13 @@
                 <textarea onkeypress="colorflip()" class="form-control" id="addTxt" rows="4"></textarea>
               </div>
               <button class="btn btn-primary" id="addBtn"><i class="fa fa-plus"></i> ADD</button>
+              <button class="btn btn-primary" id="coloron"><i class="fa fa-plus"></i> COLOR EFFECT ON</button>
+              <button class="btn btn-primary" id="coloroff"><i class="fa fa-plus"></i> OFF</button>
             </div>
         </div>
         <hr>
-        <h1>Your notes</h1>
+        <h1 id="yournote">Your notes___________________________________</h1><button class="btn btn-primary" id="newnote"><i class="fa fa-plus"></i> NEW NOTE</button>
+
         <hr>
 
         <div id="notes" class="row container-fluid">
