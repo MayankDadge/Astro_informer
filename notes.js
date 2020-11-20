@@ -12,6 +12,7 @@ let addbtn = document.getElementById("addBtn");
 addbtn.addEventListener("click", function (e) {
     let addTxt = document.getElementById("addTxt");
     let notes = localStorage.getItem("notes");
+    if(addTxt.value != ""){
     if (notes == null) {
         notesObj = [];
     }
@@ -23,6 +24,10 @@ addbtn.addEventListener("click", function (e) {
     addTxt.value = "";
     console.log(notesObj);
     showNotes();
+    }
+    else{
+        alert("You must write something in it!");
+    }
 
 })
 
@@ -72,6 +77,7 @@ function deleteNote(index) {
 
 let search = document.getElementById("searchTxt");
 search.addEventListener("input", function () {
+    document.getElementById("writehere").style.display = "none";
     let inputVal = search.value.toLowerCase();
     let noteCards = document.getElementsByClassName("noteCard");
     Array.from(noteCards).forEach(function (element) {
@@ -85,9 +91,30 @@ search.addEventListener("input", function () {
     })
 })
 
+var newnote = document.getElementById("newnote");
+newnote.addEventListener("click", function(){
+    document.getElementById("writehere").style.display="block";
+})
+
+var colorbtn = true;
+var coloron = document.getElementById("coloron");
+var coloroff = document.getElementById("coloroff");
+
+coloron.addEventListener('click', function(){
+    colorbtn = true;
+})
+
+coloroff.addEventListener("click", function(){
+    colorbtn = false;
+    document.getElementById("addanote").style.color = "black";
+    document.getElementById("dateinback").style.color = "white";
+})
+
 function colorflip(){
+    if(colorbtn){
     document.getElementById("addanote").style.color=getRandomColor();
     document.getElementById("dateinback").style.color=getRandomColor();
+    }
 
 }
 
