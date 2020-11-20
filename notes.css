@@ -52,5 +52,18 @@ h2{
         display: none;
     }
 
+    #addBtn{
+        display:block;
+    }
+
+    #coloron{
+        margin-top: 4px;
+        margin-right: 4px;
+    }
+
+    #coloroff{
+        margin-top: 4px;
+    }
+
 }
 
