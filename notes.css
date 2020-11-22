@@ -49,21 +49,20 @@ h2{
 
 @media screen and (max-width: 800px){
     #dateinback{
-        display: none;
-    }
+        margin-left: 20px;
+        font-size: medium ;
+        }
 
     #addBtn{
         display:block;
     }
 
     #coloron{
-        margin-top: 4px;
-        margin-right: 4px;
+        display: none;
     }
 
     #coloroff{
-        margin-top: 4px;
+        display: none;
     }
 
 }
-
