@@ -1,0 +1,393 @@
+body{
+    background-color: rgb(0, 0, 0);
+    background-image: url("spacewall.jpg");
+}
+
+header{
+    top:0;
+    left:0;
+    right: 0;
+    width: 100%;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(72, 144, 252);
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: larger;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-property: background-color color;
+    transition-delay: 0.2s;
+    transition-duration: 1s;
+  }
+
+  .navbar a:hover{
+    color: white;
+  }
+  
+  
+.background{
+    margin-top: 60px;
+}
+
+
+.planet{
+    display: inline-block;
+    width: 100%;
+    border: solid 2px  rgb(72, 144, 252);
+    border-radius: 20px;
+    transition-property: border-radius border;
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+}
+
+.planet:hover{
+    border-radius: 0;
+    border: solid 2px rgb(255, 72, 72);
+
+}
+.slideshow{
+  display: inline-block;
+  text-align: center;
+  padding-top:55px ;
+  margin-left: 30%;
+  margin-right: 30%;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.secondaryplanetnext{
+  border: solid 2px  rgb(72, 144, 252);
+  border-radius: 20%;
+  margin-right: 10px;
+  display: inline-block;
+  width: 180px;
+  opacity: 0.6;
+  transition-property: opacity, border-radius border;
+  transition-delay: 0.2s;
+  transition-duration: 0.5s;
+}
+
+.nextblock{
+  margin-left: 50px;
+}
+
+.secondaryplanetnext:hover{
+  opacity: 1;
+  border-radius: 0;
+    border: solid 2px rgb(255, 72, 72);
+}
+
+.caption{
+  text-align: center;
+  color: rgb(236, 241, 250);
+  font-size: larger;
+}
+
+.prev{
+    padding: 2%;
+    cursor: pointer;
+    color: white;
+    font-size: xx-large;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 170px;
+    transition-property: background-color color;
+    transition-duration: 0.6s;
+    opacity: 0.3;
+}
+
+.next{
+    padding: 2%;
+    cursor: pointer;
+    color: white;
+    font-size: xx-large;
+    position: absolute;
+    margin-left: 34%;
+    margin-top: 170px;
+    transition-property: background-color color;
+    transition-duration: 0.6s;
+    opacity: 0.3;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgb(14, 14, 14);
+    color: rgb(86, 152, 250);
+    opacity: 1;
+}
+
+.blogimage{
+  display: inline-block;
+  border-radius: 10px;
+  width: 30%;
+  margin-left: 2%;
+  opacity: 0.8;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+}
+
+.blogimage:hover{
+  opacity: 1;
+}
+
+.blogcontent{
+  font-size: x-large;
+  width:60%;
+  margin-right: 2%;
+  margin-left: 1%;
+  display: inline-block;
+  color: #f9f9f9;
+}
+
+a{
+  text-decoration: none;
+  color:  rgb(86, 152, 250) ;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+a:hover{
+  color: tomato;
+}
+
+.blogs{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.myimage{
+  display: inline-block;
+  width: 30%;
+  border-radius: 20%;
+  margin-top: 70px;
+  margin-right: 1%;
+}
+
+.intro p{
+  margin-top: 70px;
+  margin-left: 20px;
+  margin-right: 5%;
+  font-size: x-large;
+  color: white;
+}
+
+
+.intro{
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.aboutcosmo{
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px 10px 10px 10px;
+}
+
+.aboutcosmo p{
+  color: #f9f9f9;
+  font-size: larger;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.iconabout{
+  margin-left: 10px;
+}
+
+#more{
+  display: none;
+}
+
+.navsm{
+  display: none;
+}
+
+.onthemoon{
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.onthemoonsm{
+  display: none;
+}
+
+#stars{
+  animation: star 2s linear infinite;
+}
+
+#rocket{
+  animation: rocket 2s ease-out;
+  transform-origin: left;
+}
+
+.buttonlg{
+  display: inline-block;
+  font-size: x-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(72, 144, 252);
+  height: 500px;
+  padding-top: 300px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.buttonlg a{
+  color: black;
+}
+
+.buttonlg a:hover{
+  color: rgb(62, 9, 112);
+}
+
+
+@keyframes star{
+  from{
+    transform: translateX(150px);
+  }
+  to{
+    transform: translateX(-600px);
+  }
+}
+@keyframes rocket{
+  from{
+    transform: rotateZ(180deg);
+  }
+  to{
+    transform: rotateZ(0deg);
+  }
+}
+
+@media screen and (max-width: 480px){
+  header{
+    display: absolute;
+    margin-top: 0;
+  }
+  .links{
+    display: none;
+  }
+  .slideshow{
+    padding: 0%;
+    margin: 0%;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .prev{
+    margin-top: 70px;
+  }
+
+  .next{
+    margin-top: 70px;
+    margin-left: 67%;
+  }
+
+  .nextblock{
+    display: none;
+  }
+
+  .blogimage{
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10% ;
+  }
+
+  .blogcontent{
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10% ;
+  }
+
+  .blogcontent h1{
+     font-size: smaller;
+  }
+
+  .blogcontent p{
+    font-size: large;
+  }
+
+  #more{
+    display: block;
+    margin-top: 15px;
+    float: right;
+    margin-right: 15px;
+    font-size:  x-large;
+  }
+
+  .navsm{
+    background-color: rgb(86, 152, 250);
+    display: block;
+  }
+
+  .navsm a{
+    color: black;
+    font-size: larger;
+    display: block;
+    padding: 10px;
+  }
+
+  .intro{
+    display: block;
+  }
+
+  .intro p{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;  }
+
+  .myimage{
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+  }
+
+  .aboutcosmo{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+  }
+
+  .onthemoon{
+    display: none;
+  }
+
+  .onthemoonsm{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+  }
+
+  .buttonlg{
+    text-align: center;
+    display: block;
+    height: 600px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .buttonlg a{
+    color: rgb(218, 8, 218);
+  }
+}
